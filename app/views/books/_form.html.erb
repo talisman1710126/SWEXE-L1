@@ -1,0 +1,17 @@
+<%= form_with model: book do |f| %>
+  <div>
+    <%= f.label :title, "書名" %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div>
+    <%= f.label :author, "著者" %><br>
+    <%= f.text_field :author %>
+  </div>
+  <div>
+    <%= f.label :published_year, "出版年" %><br>
+    <%= f.number_field :published_year %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
